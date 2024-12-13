@@ -16,7 +16,6 @@ body{
     font-size: 18px;
     font-weight: 500;
     color: black;
-
 }
 .links:hover{
     color: rgb(3, 148, 99);
@@ -65,10 +64,12 @@ body{
     border-color: white;
 }
 .items{
-    height: 560px;
-    width: 410px;
+    height: 550px;
+    width: 300px;
     margin-top: 30px;
     border-radius: 20px;
+    position: relative;
+    border: solid 1px lightgray;
 }
 .itemcard{
     height: 420px;
@@ -78,6 +79,159 @@ body{
 }
 .featuredcards{
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-evenly;
+    margin-right: 380px;
 }
+.deal1{
+    margin-left: 80px;
+    position: relative;
+    width: 600px;
+  }
+  .deal1img{
+    width: 600px;
+    height: 450px;
+  }
+  .deal1text{
+    position: absolute;
+    transform: translate(20%, -140%);
+  }
+  .deal2{
+    position: relative;
+    width: 600px;
+  }
+  .deal2img{
+    width: 600px;
+    height: 450px;
+  }
+  .deal2text{
+    position: absolute;
+    transform: translate(10%, -140%);
+  }
+  .timer{
+    background-color: lightseagreen;
+    padding: 4px;
+  }
+  .deals-btn{
+    margin-top: 10px; 
+    background-color: transparent; 
+    border: 1px rgb(19, 134, 128);
+    color: rgb(19, 134, 128); 
+    padding: 10px;
+    border: solid 1px seagreen;
+  }
+.deals-btn:hover{
+    margin-top: 10px; 
+    background-color: rgb(19, 134, 128); 
+    border: solid 1px seagreen;
+    color: white; 
+    padding: 10px; 
+    border-radius:4px;
+  }
+  .newarrivalheading{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .img1{
+object-fit: cover;
+transition:opasity 1s ease;
+  }
+.img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    object-fit: cover;
+    transition:opasity 1s ease;
+} 
+.itemcard:hover.img1 {
+    opacity: 0;
+}
+.itemcard:hover.img2 {
+    opacity: 1;
+}
+hov-btn:hover{
+    transform: translate(70px, -260px);
+    opacity: 0;
+    background-color: seagreen;
+  }
+  .hoverbtn{
+      position: relative;
+      transform: translate(70px, -260px);
+      opacity: 0;
+      padding: 10px 15px;
+      background-color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: opacity 1s ease;
+  }
+  .hoverbtn:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+    padding: 10px 15px;
+    background-color:  white;
+    color: seagreen;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 1s ease;
+  }
+  .tooltip{
+      visibility: hidden;
+      width: 150px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      padding: 8px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%; /* Position above the button */
+      left: 50%;  
+      margin-left: -75px; /* Offset to center */
+      opacity: 0;
+      transition: opacity 0.3s ease; /* Smooth fade in/out */
+  }
+  .items:hover .hoverbtn{
+    opacity: 1;
+  }
+  .hovercart{
+    background-color: rgb(19, 134, 128); 
+    padding: 10px;
+    padding-bottom: 40px;
+    border-radius: 50%;
+  }
+  .hovercart:hover{
+    background-color: gray;
+    padding: 10px;
+    padding-bottom: 40px;
+    border-radius: 50%;
+  }
+  .carttooltip{
+    visibility: hidden;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    /* padding: 8px; */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the button */
+    left: 50%;  
+    margin-left: -80px; /* Offset to center */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth fade in/out */
+  }
+  .hovercart:hover .carttooltip{
+    visibility: visible;
+    opacity: 1;
+    padding: 10px;
+    background-color:  rgb(255, 255, 255);
+    color: seagreen;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 1s ease;
+
+  } 
