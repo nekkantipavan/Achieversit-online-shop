@@ -338,8 +338,7 @@ hov-btn:hover{
   height: 90px;
   display: flex; 
   justify-content: space-around; 
-  background-color: rgb(165, 192, 176); 
-  
+  background-color: rgb(165, 192, 176);  
 }
 .footer-2{
   display: flex; 
@@ -376,8 +375,6 @@ hov-btn:hover{
   padding-top: 20px;
   padding-bottom: 40px;
   justify-content: space-around;
-
-
 }
 .login-btn{
     width: 90px;
@@ -402,4 +399,22 @@ hov-btn:hover{
 .account{
   border: solid 1px lightgray;
   padding: 6px 10px 6px 10px;
+}
+/* shop */
+.big-card{
+  height: 550px;
+  width: 350px;
+  margin-top: 30px;
+  border-radius: 20px;
+  position: relative;
+  border: solid 1px rgb(62, 178, 172);
+}
+.big-card-img{
+  height: 420px;
+  width: 350px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.big-card-text{
+  transform: translate(10px,0px);
 }
