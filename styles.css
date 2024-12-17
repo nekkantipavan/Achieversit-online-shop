@@ -316,6 +316,23 @@ hov-btn:hover{
   .newitemcard:hover.img2 {
     opacity: 1;
 }
+
+.Hot-releases-img{
+  height: 80px;
+  margin-top: 20px;
+}
+.Deals-Outlet-img{
+  height: 80px;
+  margin-top: 20px;
+}
+.Top-Selling-img{
+  height: 80px;
+  margin-top: 20px;
+}
+.Trendy-img{
+  height: 80px;
+  margin-top: 20px;
+}
 .footer1{
   /* padding-top: 5px; */
   height: 90px;
@@ -343,4 +360,46 @@ hov-btn:hover{
   padding-top: 20px; 
   height: 40px; 
   margin-bottom: 30px;
+}
+
+/* login-styles */
+.form{
+  border: solid 1px lightgrey;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px;
+  width: 500px;
+  border-radius: 10px;
+}
+.forms{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  justify-content: space-around;
+
+
+}
+.login-btn{
+    width: 90px;
+    background-color: rgb(19, 134, 128);
+    color: white;
+    float: left;
+    padding: 4px;
+    border: solid 1px rgb(19, 134, 128);  
+    border-radius: 5px;
+}
+.submit-btn{
+  width: 190px;
+  background-color: rgb(19, 134, 128);
+  color: white;
+  float: left;
+  padding: 4px;
+  border: solid 1px rgb(19, 134, 128);  
+  border-radius: 5px;
+}
+
+/* Account */
+.account{
+  border: solid 1px lightgray;
+  padding: 6px 10px 6px 10px;
 }
