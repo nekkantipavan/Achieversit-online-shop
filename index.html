@@ -8,19 +8,35 @@
     <title>Home</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <img src="img/logo.png" alt="achiversitlogo">
-          <a class="links" target="_blank" href="index.html">Home</a>
-          <a class="links" target="_blank" href="shop.html">shop</a>
-          <a class="links" target="_blank" href="account.html">My Account</a>
-          <a class="links" target="_blank" href="compare.html">compare</a>
-          <a class="links" target="_blank" href="login.html">Login</a>
-             <input class="search" type="search" placeholder="Search" aria-label="Search">
-              <img class="hearticon" src="img/icon-heart.svg">
-              <img class="carticon" src="img/icon-cart.svg">
+   <!-- header-1 -->
+  <header class="header-1" style="padding-bottom: 20px;">
+    <div style="display: flex; justify-content: space-evenly;">
+      <img class="logo" src="img/logo.png">
+        <a class="links" href="index.html">Home</a>
+        <a class="links" target="_blank" href="shop.html">Shop</a>
+        <a class="links" target="_blank" href="account.html">My Account</a>
+        <a class="links" target="_blank" href="compare.html">Compare</a>
+        <a class="links" target="_blank" href="login.html">Login</a>
+        <input class="searchbar" placeholder="Search for items..." type="text">
+        <img class="search" src="img/search.png" alt="">
+        <div style="margin-right: 16px; display: flex;">
+          <div>
+            <img class="heart" src="img/icon-heart.svg">
+          <div class="heart-num">3</div>
+          </div>
+          <div>
+            <img class="cart" src="img/icon-cart.svg">
+          <div class="cart-num">3</div>
+          </div>
         </div>
-      </nav>
+    </div>
+  </header>
+  <!-- header-2 -->
+  <header style="background-color: lightgray; margin-top: 90px;">
+    <div style="margin-left: 60px; padding-top: 30px;">
+      Home > Login/Register
+    </div>
+  </header>
       <div style="display: flex; justify-content: space-around;">
       <div class="hometext">
        <p style="font-size: 20px; color: rgb(9, 87, 9); font-weight: 600;">Hot Promotions</p> 
@@ -143,27 +159,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="featuredcards">
-        <div class="items">
-          <img src="img/product-1-1.jpg" class="itemcard" alt="...">
-          <div class="card-body">
-            <p class="card-text">Shirts</p>
-          </div>
-        </div>
-          <div class="items">
-            <img src="img/product-2-1.jpg" class="itemcard" alt="...">
-            <div class="card-body">
-              <p class="card-text">Bags</p>
-            </div>
-          </div>
-            <div class="items">
-              <img src="img/product-3-1.jpg" class="itemcard" alt="...">
-              <div class="card-body">
-                <p class="card-text">Sandles</p>
-              </div>
-            </div>
-        </div>
-      </div> -->
       <div class="featuredcards">
         <div class="items">
           <img src="img/product-4-1.jpg" class="itemcard img1" alt="...">
@@ -329,45 +324,174 @@
     </div>
 <!-- new arrivals (samll cards) -->
     <div class="newarrivalheading">
-      <span style="color: rgb(13, 152, 122);margin-left:40px;">New</span> <span> Arrival</span>
+      <span style="color: rgb(13, 152, 122);margin-left:40px;">New</span> <span> Arrivals</span>
     </div>
-    <div class="popularcategories">
-      <div class="card">
-        <img src="img/category-1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Shirts</p>
+    <div class="newarrivals">
+      <div class="newitems">
+        <img src="img/product-1-1.jpg" class="newitemcard img1" alt="...">
+        <img src="img/product-1-2.jpg" class="newitemcard img2" alt="...">
+        <!-- bigcard text -->
+          <div style="display: flex;">
+            <div class="bigcardtext" style="margin-left: 14px;">
+              <div style="color: gray;font-size: 12px;">Clothing</div>
+               <div style="font-weight: 600;">Colorful pattern shirt</div>
+               *****<br>
+               <div style="display: flex;">
+                 <div style="margin-right: 10px;">$238.5</div>
+                 <s>$245.8</s>
+               </div>
+             </div>
+             <div class="hovercart" style="transform: translate(20px,65px); height: 40px; width: 40px;"><img src="img/icon-cart.svg"  alt=""><span class="carttooltip">Add to card</span></div>
+        </div>
+        <div style="display: flex; gap: 10px; transform: translate(0px,-70px);">
+          <div><button class="hoverbtn">👁️<span class="tooltip">Quick view</span></button></div>
+          <div><button class="hoverbtn">&hearts;<span class="tooltip">Wish list</span></button></div>
+          <div><button class="hoverbtn">🔀<span class="tooltip">Compare</span></button></div>
         </div>
       </div>
-        <div class="card">
-          <img src="img/category-2.jpg" class="card-img-top" alt="...">
+        <div class="newitems">
+          <img src="img/product-2-1.jpg" class="newitemcard img1" alt="...">
+          <img src="img/product-2-2.jpg" class="newitemcard img2" alt="...">
+          <!-- bigcard text -->
+            <div style="display: flex;">
+              <div class="bigcardtext" style="margin-left: 14px;">
+                <div style="color: gray;font-size: 12px;">Clothing</div>
+                 <div style="font-weight: 600;">Colorful pattern shirt</div>
+                 *****<br>
+                 <div style="display: flex;">
+                   <div style="margin-right: 10px;">$238.5</div>
+                   <s>$245.8</s>
+                 </div>
+               </div>
+               <div class="hovercart" style="transform: translate(20px,65px); height: 40px; width: 40px;"><img src="img/icon-cart.svg"  alt=""><span class="carttooltip">Add to card</span></div>
+          </div>
+          <div style="display: flex; gap: 10px; transform: translate(0px,-70px);">
+            <div><button class="hoverbtn">👁️<span class="tooltip">Quick view</span></button></div>
+            <div><button class="hoverbtn">&hearts;<span class="tooltip">Wish list</span></button></div>
+            <div><button class="hoverbtn">🔀<span class="tooltip">Compare</span></button></div>
+          </div>
+        </div>
+          <div class="newitems">
+            <img src="img/product-3-1.jpg" class="newitemcard img1" alt="...">
+        <img src="img/product-3-2.jpg" class="newitemcard img2" alt="...">
+        <!-- bigcard text -->
+          <div style="display: flex;">
+            <div class="bigcardtext" style="margin-left: 14px;">
+              <div style="color: gray;font-size: 12px;">Clothing</div>
+               <div style="font-weight: 600;">Colorful pattern shirt</div>
+               *****<br>
+               <div style="display: flex;">
+                 <div style="margin-right: 10px;">$238.5</div>
+                 <s>$245.8</s>
+               </div>
+             </div>
+             <div class="hovercart" style="transform: translate(20px,65px); height: 40px; width: 40px;"><img src="img/icon-cart.svg"  alt=""><span class="carttooltip">Add to card</span></div>
+        </div>
+        <div style="display: flex; gap: 10px; transform: translate(0px,-70px);">
+          <div><button class="hoverbtn">👁️<span class="tooltip">Quick view</span></button></div>
+          <div><button class="hoverbtn">&hearts;<span class="tooltip">Wish list</span></button></div>
+          <div><button class="hoverbtn">🔀<span class="tooltip">Compare</span></button></div>
+        </div>
+      </div>
+    <div class="newitems">
+      <img src="img/product-4-1.jpg" class="newitemcard img1" alt="...">
+      <img src="img/product-4-2.jpg" class="newitemcard img2" alt="...">
+      <!-- bigcard text -->
+        <div style="display: flex;">
+          <div class="bigcardtext" style="margin-left: 14px;">
+            <div style="color: gray;font-size: 12px;">Clothing</div>
+             <div style="font-weight: 600;">Colorful pattern shirt</div>
+             *****<br>
+             <div style="display: flex;">
+               <div style="margin-right: 10px;">$238.5</div>
+               <s>$245.8</s>
+             </div>
+           </div>
+           <div class="hovercart" style="transform: translate(20px,65px); height: 40px; width: 40px;"><img src="img/icon-cart.svg"  alt=""><span class="carttooltip">Add to card</span></div>
+      </div>
+      <div style="display: flex; gap: 10px; transform: translate(0px,-70px);">
+        <div><button class="hoverbtn">👁️<span class="tooltip">Quick view</span></button></div>
+        <div><button class="hoverbtn">&hearts;<span class="tooltip">Wish list</span></button></div>
+        <div><button class="hoverbtn">🔀<span class="tooltip">Compare</span></button></div>
+      </div>
+    </div>
+    </div>
+    <!-- lists -->
+     <div>
+      <div class="newarrivalheading">
+        <span style="color:black;margin-left:40px;">New</span> <span> Arrivals</span>
+      </div>
+      <div class="hotreleases">
+        <div>  <img src="img/category-2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Bags</p>
-          </div>
-        </div>
-          <div class="card">
-            <img src="img/category-3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Sandles</p>
-            </div>
-          </div>
-            <div class="card">
-              <img src="img/category-4.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Scarfcap</p>
-              </div>
-            </div>
-              <div class="card">
-                <img src="img/category-5.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Shoes</p>
-                </div>
-             </div>
+          </div></div>
       </div>
-   
-             
-     
+     </div>
 
-      
+     <!-- footer-1 -->
+<footer>
+  <div class="footer1">
+    <div style="padding-top: 30px; font-weight: 600;">
+      <img style="height: 30px; width: 30px;" class="email-icon" src="img/icon-email.svg" alt="">
+      Sign in to Newsletter
+    </div>
+    <div style="padding-top: 30px; font-weight: 600; font-size: 16px;">
+      ...and receive $25 coupon for first shopping.
+    </div>
+    <div style="padding-top: 20px; margin-bottom: 30px">
+      <input style="font-size: 14px; height: 40px; padding-left: 10px; width: 240px; margin-right: -5px" type="search" placeholder="Enter Your Email">
+      <button class="subs-btn">Subscribe</button>
+    </div>
+  </div>
+  <!-- footer-2 -->
+  <div class="footer-2">
+    <div style="padding-top: 30px;">
+      <img style="height: 60px; width: 170px;" src="img/logo.png" alt=""> <br>
+      Contact <br>
+      <b>Addres:</b>13 Tlemcen Road, Street 32, Beb-Wahren <br>
+      <b>Phone:</b> +01 2222 365/(+91)0123456789 <br>
+      <b>Hours:</b> 10:00 - 18:00, Mon - Sat <br> <br>
+      Follow Me <br>
+      <img class="footer-icons" src="img/icon-facebook.svg" alt="" style="height: 40px; width: 40px;">
+      <img class="footer-icons" src="img/icon-twitter.svg" alt="" style="height: 40px; width: 40px;">
+      <img class="footer-icons" src="img/icon-instagram.svg" alt=""  style="height: 40px; width: 40px;">
+      <img class="footer-icons" src="img/icon-pinterest.svg" alt="" style="height: 40px; width: 40px;">
+      <img class="footer-icons" src="img/icon-youtube.svg" alt="" style="height: 40px; width: 40px;">
+    </div>
+    <div style="padding-top: 30px;">
+      <b>Address</b> <br> <br>
+      About Us <br> 
+      Delivery Information <br>
+      Privacy Policy <br>
+      Terms & Conditions <br>
+      Contact Us <br>
+      Support Center <br>
+    </div>
+    <div style="padding-top: 30px;">
+      <b>My Account</b> <br> <br>
+      Sign In <br>
+      View Cart <br>
+      My Wishlist <br>
+      Track My Order <br>
+      Help <br>
+      Order <br>
+    </div>
+    <div style="padding-top: 30px;">
+      <b>Secured Payment Gateways</b> <br> <br>
+      <img class="payment-method" src="img/payment-method.png">
+    </div>
+  </div>
+  <hr>
+  <div style="display: flex; justify-content: space-between;">
+    <div style="margin-left: 50px; color: gray">
+      &copy; 2024 PAVAN NEKKANTI, All Rights Reserved.
+    </div>
+    <div style="margin-right: 50px; color: gray;">
+      Designed by PAVAN NEKKANTI
+    </div>
+  </div>
+</footer>
 
-  </body>
+</body>
 </html>
